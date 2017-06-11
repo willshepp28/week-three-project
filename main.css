@@ -1,0 +1,144 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+
+
+ /*------------------------------------*\
+    Global
+ \*------------------------------------*/
+
+ * {
+   box-sizing: border-box;
+ }
+
+ html,
+ body {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   background: #323232;
+   padding: 22px;
+   font-size: 20px;
+ }
+
+
+
+ /*------------------------------------*\
+    #calculator-container
+ \*------------------------------------*/
+
+
+#calculator-container {
+
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.key-container {
+  display: flex;
+}
+
+
+
+.keys {
+    background: #61B34F;
+    width: 13%;
+    height: 13vh;
+    flex:1;
+    color: white;
+    border: 1px solid #91CA86;
+}
+
+button#display {
+    flex: 2;
+}
+
+.goback {
+  color: white;
+}
+
+
+
+
+.lightgreen {
+    background-color: #82C276;
+    color: #41613A;
+}
+
+.lightgreen:hover {
+    background-color: #82C276;
+    color: white;
+}
+
+.change:hover {
+  background: #91CA86;
+}
+
+/*
+ * Component section heading
+ */
+
+.element {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Box-model */
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;
+
+  /* Typography */
+  font: normal 13px "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+
+  /* Visual */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
+  /* Misc */
+  opacity: 1;
+}
+
+
+/*------------------------------------*\
+  #SECTION-TITLE
+\*------------------------------------*/
